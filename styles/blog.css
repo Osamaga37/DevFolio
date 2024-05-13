@@ -1,0 +1,85 @@
+body {
+  background-color: #cecbcb;
+}
+header {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .over-lay {
+  background-color: rgba(0, 120, 255, 0.5);
+}
+
+.blog-info {
+  position: relative;
+}
+
+.blog-info::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #0078ff;
+  position: absolute;
+  left: 0;
+}
+
+.italic-p {
+  position: relative;
+}
+
+.italic-p::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #0078ff;
+  position: absolute;
+  left: -10px;
+}
+
+.post {
+  position: relative;
+}
+
+.post a {
+  color: black;
+}
+
+.post a:hover {
+  color: #0078ff;
+}
+
+.post::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #0078ff;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translate(-50%);
+  vertical-align: middle;
+  transform: rotate(90deg);
+}
+
+.header-line {
+  position: relative;
+}
+.header-line::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background-color: #0078ff;
+  bottom: -10px;
+  left: 0;
+}
+
+.comment img {
+  width: 100px;
+}
+
+.card-body a {
+  text-decoration: none;
+}
